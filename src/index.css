@@ -1,13 +1,89 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar {
+  background-color: beige;
+  border-bottom: 1px solid black;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.home {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.navbar a .cart {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a .cart .cart-quantity {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+/* Cart */
+
+.cart-titles {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  margin-top: 5rem;
+}
+
+.cart-items-container {
+  border-top: 1px solid gray;
+}
+
+.cart-items-container .item-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px solid gray;
+}
+
+.cart-items-container .item-container img {
+  width: 120px;
+  height: 8rem;
+}
+
+.cart-items-container .item-container .product {
+  display: flex;
+  align-items: center;
+}
+
+.cart-items-container .item-container .product .product-details {
+  height: 100%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-items-container .item-container .product .product-details .product-btn button{
+  margin: 0 5px
 }
